@@ -34,6 +34,7 @@ label start:
             pass
     
     "History"
+    "Test git DeckTop"
         
     
     me "text3"
