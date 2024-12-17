@@ -1,0 +1,26 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 29, in script
+    $ renpy.add_history("Player", "History에 표시 1번")
+  File "game/script.rpy", line 29, in <module>
+    $ renpy.add_history("Player", "History에 표시 1번")
+AttributeError: module 'renpy.exports' has no attribute 'add_history'
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 29, in script
+    $ renpy.add_history("Player", "History에 표시 1번")
+  File "E:\1chromeDownload\renpy-8.3.2-sdk\renpy\ast.py", line 821, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "E:\1chromeDownload\renpy-8.3.2-sdk\renpy\python.py", line 1178, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/script.rpy", line 29, in <module>
+    $ renpy.add_history("Player", "History에 표시 1번")
+AttributeError: module 'renpy.exports' has no attribute 'add_history'
+
+Windows-10-10.0.19045 AMD64
+Ren'Py 8.3.2.24090902
+Real_Test 1.0
+Mon Dec 16 03:10:56 2024
