@@ -35,6 +35,8 @@ label start:
     
     "History"
     "Test git DeckTop"
+
+    "Test git Labtop"
         
     
     me "text3"
