@@ -278,9 +278,13 @@ style input:
 screen choice(items):
     style_prefix "choice"
 
+    # vbox:
+    #     for i in items:
+    #         textbutton i.caption action i.action
     vbox:
         for i in items:
-            textbutton i.caption action i.action
+            textbutton i.caption action [i.action, Function(narrator.add_history, kind="adv",who=__( "선택지 : " ),what=__(i.caption))]
+
 
 
 style choice_vbox is vbox
